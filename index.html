@@ -3,82 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Feedback Form</title>
+    <title>Banda Ashish Reddy | Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        body {
-            background: linear-gradient(135deg, #007bff, #6610f2);
-            color: white;
-            font-family: 'Arial', sans-serif;
-        }
-        .container {
-            max-width: 600px;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-        h2 {
-            font-size: 2rem;
-            font-weight: bold;
-            text-align: center;
-        }
-        .form-control {
-            background: rgba(255, 255, 255, 0.8);
-            border: none;
-        }
-        .form-control:focus {
-            box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
-        }
-        .btn-custom {
-            background: #ffcc00;
-            color: black;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .btn-custom:hover {
-            background: #ffaa00;
-        }
-        .contact-info a {
-            color: #ffcc00;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 <body>
 
-<div class="container mt-5">
-    <h2> Feedback Form</h2>
-    <p class="text-center">We appreciate your feedback! Let us know your thoughts.</p>
-    <form>
-        <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Banda Ashish Reddy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-        </div>
-        <div class="mb-3">
-            <label for="message" class="form-label">Feedback</label>
-            <textarea class="form-control" id="message" rows="4" placeholder="Write your feedback here..." required></textarea>
-        </div>
-        <button type="submit" class="btn btn-custom w-100">Submit Feedback</button>
-    </form>
+    </div>
+</nav>
 
-    <div class="text-center mt-4 contact-info">
-        <h5> Contact Me</h5>
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2>About Me</h2>
+        <p class="lead">I am Banda Ashish Reddy, a 3rd-year B.Tech student at KMIT, specializing in Computer Science and Engineering.</p>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Medical Report Generation</h5>
+                        <p class="card-text">Developing an AI system to generate medical reports using NLP and deep learning.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio Website</h5>
+                        <p class="card-text">Designed a responsive portfolio using Bootstrap.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2>Contact Me</h2>
         <p>Email: <a href="mailto:bandaashishreddy@example.com">bandaashishreddy@example.com</a></p>
         <p>LinkedIn: <a href="https://linkedin.com/in/bandaashishreddy" target="_blank">linkedin.com/in/bandaashishreddy</a></p>
         <p>GitHub: <a href="https://github.com/bandaashishreddy" target="_blank">github.com/bandaashishreddy</a></p>
     </div>
-</div>
+</section>
 
 </body>
 </html>
